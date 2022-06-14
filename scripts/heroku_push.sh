@@ -1,2 +1,2 @@
-heroku container:push web -a jupyter-x-docker
-heroku container:release web -a jupyter-x-docker
+heroku container:push web -a jayantgoel001/jupyter-x-docker
+heroku container:release web -a jayantgoel001/jupyter-x-docker

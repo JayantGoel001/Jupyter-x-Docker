@@ -1,0 +1,1 @@
+docker push ghcr.io/jayantgoel001/jupyter-x-docker:latest
