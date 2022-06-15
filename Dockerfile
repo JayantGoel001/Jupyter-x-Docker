@@ -48,7 +48,7 @@ RUN pip install fastai
 RUN pipenv install --skip-lock --system --dev
 
 LABEL org.opencontainers.image.source https://github.com/JayantGoel001/Jupyter-x-Docker
-LABEL org.opencontainers.image.description Docker Image of Jupyter NoteBook
+LABEL org.opencontainers.image.description Jupyter Notebook Server built with Docker & deployed on Heroku.
 
 RUN [ "chmod", "+x", "./scripts/entrypoint.sh" ]
 
