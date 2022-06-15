@@ -48,6 +48,5 @@ jobs:
       - name: Build, Push and Deploy a Docker container to Heroku.
         uses: gonuit/heroku-docker-deploy@v1.3.3
         with:
-          email: "jgoel92@gmail.com"
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "jupyter-x-docker"
