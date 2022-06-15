@@ -1,3 +1,4 @@
 *.md
 *.code-workspace
-.git
+**/.git
+**/.github

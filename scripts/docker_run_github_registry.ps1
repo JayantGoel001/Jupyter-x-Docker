@@ -1,1 +1,1 @@
-docker run --env PORT=8888 -it -p 8888:8888 ghcr.io/jayantgoel001/jupyter-x-docker
+docker run --env PORT=8888 -it -p 8888:8888 ghcr.io/jayantgoel001/jupyter-x-docker:latest
