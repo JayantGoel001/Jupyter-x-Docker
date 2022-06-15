@@ -3,7 +3,7 @@ name: publish-docker-image
 on:
     push:
         branches:
-            - "main"
+            - "master"
 
 jobs:
   publish-docker-image-on-github-cr:
