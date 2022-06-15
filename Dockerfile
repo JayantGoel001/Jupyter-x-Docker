@@ -7,7 +7,7 @@ COPY . ./
 
 RUN pip install pip pipenv --upgrade
 
-# sklearn opencv, numpy, and pandas
+# sklearn, numpy, and pandas
 RUN pip install scikit-learn numpy pandas
 
 # Project installs
