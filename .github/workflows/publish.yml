@@ -39,3 +39,20 @@ jobs:
         run: |
           docker build -t jayantgoel001/jupyter-x-docker:latest .
           docker push jayantgoel001/jupyter-x-docker:latest
+
+  deploy-docker-image-on-heroku:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Login to Heroku
+      - uses: akhileshns/heroku-deploy@v3.12.12 
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "jupyter-x-docker"
+          heroku_email: "jgoel92@gmail.com"
+      
+      - name: Build and Deploy the Docker image on Heroku
+        run: |
+          heroku container:push web -a jupyter-x-docker
+          heroku container:release web -a jupyter-x-docker
