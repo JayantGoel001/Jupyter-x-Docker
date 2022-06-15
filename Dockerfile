@@ -51,4 +51,5 @@ LABEL org.opencontainers.image.source https://github.com/JayantGoel001/Jupyter-x
 LABEL org.opencontainers.image.description Docker Image of Jupyter NoteBook
 
 RUN [ "chmod", "+x", "./scripts/entrypoint.sh" ]
+
 CMD [ "./scripts/entrypoint.sh" ]
